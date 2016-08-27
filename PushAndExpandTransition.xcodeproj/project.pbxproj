@@ -14,6 +14,9 @@
 		64E88B381D7243F500B3FB40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E88B361D7243F500B3FB40 /* LaunchScreen.storyboard */; };
 		64E88B431D7243F500B3FB40 /* PushAndExpandTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E88B421D7243F500B3FB40 /* PushAndExpandTransitionTests.swift */; };
 		64E88B4E1D7243F500B3FB40 /* PushAndExpandTransitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E88B4D1D7243F500B3FB40 /* PushAndExpandTransitionUITests.swift */; };
+		64E88B5C1D72456000B3FB40 /* PushAndExpandTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E88B5B1D72456000B3FB40 /* PushAndExpandTransition.swift */; };
+		64E88B5E1D7246D700B3FB40 /* TargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E88B5D1D7246D700B3FB40 /* TargetViewController.swift */; };
+		64E88B601D7247C100B3FB40 /* ViewControllerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E88B5F1D7247C100B3FB40 /* ViewControllerTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		64E88B491D7243F500B3FB40 /* PushAndExpandTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushAndExpandTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E88B4D1D7243F500B3FB40 /* PushAndExpandTransitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAndExpandTransitionUITests.swift; sourceTree = "<group>"; };
 		64E88B4F1D7243F500B3FB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E88B5B1D72456000B3FB40 /* PushAndExpandTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushAndExpandTransition.swift; sourceTree = "<group>"; };
+		64E88B5D1D7246D700B3FB40 /* TargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetViewController.swift; sourceTree = "<group>"; };
+		64E88B5F1D7247C100B3FB40 /* ViewControllerTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				64E88B2D1D7243F500B3FB40 /* AppDelegate.swift */,
-				64E88B2F1D7243F500B3FB40 /* ViewController.swift */,
 				64E88B311D7243F500B3FB40 /* Main.storyboard */,
+				64E88B631D7255EF00B3FB40 /* ViewControllers */,
+				64E88B641D7255F800B3FB40 /* Transitions */,
 				64E88B341D7243F500B3FB40 /* Assets.xcassets */,
 				64E88B361D7243F500B3FB40 /* LaunchScreen.storyboard */,
 				64E88B391D7243F500B3FB40 /* Info.plist */,
@@ -123,6 +130,40 @@
 				64E88B4F1D7243F500B3FB40 /* Info.plist */,
 			);
 			path = PushAndExpandTransitionUITests;
+			sourceTree = "<group>";
+		};
+		64E88B611D7255D900B3FB40 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64E88B2F1D7243F500B3FB40 /* ViewController.swift */,
+				64E88B5F1D7247C100B3FB40 /* ViewControllerTransition.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		64E88B621D7255E300B3FB40 /* TargetViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64E88B5D1D7246D700B3FB40 /* TargetViewController.swift */,
+			);
+			name = TargetViewController;
+			sourceTree = "<group>";
+		};
+		64E88B631D7255EF00B3FB40 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				64E88B611D7255D900B3FB40 /* ViewController */,
+				64E88B621D7255E300B3FB40 /* TargetViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		64E88B641D7255F800B3FB40 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				64E88B5B1D72456000B3FB40 /* PushAndExpandTransition.swift */,
+			);
+			name = Transitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +298,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				64E88B301D7243F500B3FB40 /* ViewController.swift in Sources */,
+				64E88B5C1D72456000B3FB40 /* PushAndExpandTransition.swift in Sources */,
 				64E88B2E1D7243F500B3FB40 /* AppDelegate.swift in Sources */,
+				64E88B5E1D7246D700B3FB40 /* TargetViewController.swift in Sources */,
+				64E88B601D7247C100B3FB40 /* ViewControllerTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
